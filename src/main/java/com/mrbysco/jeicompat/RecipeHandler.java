@@ -36,8 +36,6 @@ public class RecipeHandler implements Listener {
 		final MinecraftServer server = player.level().getServer();
 		final RecipeManager recipeManager = server.getRecipeManager();
 
-		originalPlayer.sendMessage("§6PaperMC JEI Compat: Syncing Recipes...§r");
-
 		RecipeMap recipeMap = recipeManager.recipes;
 
 		RegistryFriendlyByteBuf buffer = new RegistryFriendlyByteBuf(Unpooled.buffer(), server.registryAccess());
